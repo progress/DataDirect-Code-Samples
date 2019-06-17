@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hive">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Progress/DataDirect/JDBC_60/lib/hive.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

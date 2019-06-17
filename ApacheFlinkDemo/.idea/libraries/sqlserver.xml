@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sqlserver">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/Frequent/Debug Drivers/sqlserver.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Desktop/Frequent/Debug Drivers/sqlserver.jar!/" />
+    </SOURCES>
+  </library>
+</component>
