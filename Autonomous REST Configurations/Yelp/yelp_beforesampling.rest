@@ -1,0 +1,11 @@
+{
+    "categories":"https://api.yelp.com/v3/categories",
+    "events":"https://api.yelp.com/v3/events?location=raleigh",
+    "locationsearch":"https://api.yelp.com/v3/businesses/search?location=27617",
+    "phonesearch":"https://api.yelp.com/v3/businesses/search/phone?phone=14159083801",
+    "deliverysearch":"https://api.yelp.com/v3/transactions/delivery/search?location=raleigh",
+    "business":"https://api.yelp.com/v3/businesses/{businessid:WavvLdfdP6g8aZTtbBQHTw}",
+	"businessmatch":"https://api.yelp.com/v3/businesses/matches?name=Gary%20Danko&address1=800%20N%20Point%20St&city=San%20francisco&state=ca&country=US",
+	"reviews":"https://api.yelp.com/v3/businesses/{businessid:WavvLdfdP6g8aZTtbBQHTw}/reviews",
+	"eventlookup":"https://api.yelp.com/v3/events/{id:san-francisco-yelp-10-year-anniversary-celebration}"
+}
