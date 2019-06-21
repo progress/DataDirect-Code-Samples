@@ -1,6 +1,8 @@
+
 Yelp Documentation: https://www.yelp.com/developers/documentation/v3/get_started
 
-Covered Endpoints:
+Covered Endpoints
+-----------------
 
 Business Search    : https://www.yelp.com/developers/documentation/v3/business_search
 
