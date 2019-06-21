@@ -1,3 +1,9 @@
+/* 
+ *
+ * Copyright (c) 1995-2019 Progress Software Corporation. All Rights Reserved.
+ *
+*/
+
 package com.progress;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
