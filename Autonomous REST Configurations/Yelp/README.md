@@ -1,7 +1,5 @@
 ## Yelp Configuration
 
-Yelp Documentation: https://www.yelp.com/developers/documentation/v3/get_started
-
 ### Get your API Keys
 1. Go to [Yelp Developers](https://www.yelp.com/developers/documentation/v3) page, create a new application.
 
@@ -14,15 +12,17 @@ Yelp Documentation: https://www.yelp.com/developers/documentation/v3/get_started
           authheader: Authorization
           SecurityToken: Bearer <Yelp API Key>
 
+### API Documentation
+4. You can find the Yelp Documentation [here](https://www.yelp.com/developers/documentation/v3/get_started)
 
 ### API Limitations:
-4. Reviews are limited to just 3 records
+5. Reviews are limited to just 3 records
 
-5. Pagination is only available on Business Search endpoint.
+6. Pagination is only available on Business Search endpoint.
 
-6. Maximum value for offset+limit is 1000. So you will only get maximum of 1000 records from Business Search.
+7. Maximum value for offset+limit is 1000. So you will only get maximum of 1000 records from Business Search.
 
-7. Transaction Search returns only 20 records. Doesn't offer pagination.
+8. Transaction Search returns only 20 records. Doesn't offer pagination.
 
 
 ### Covered Endpoints
