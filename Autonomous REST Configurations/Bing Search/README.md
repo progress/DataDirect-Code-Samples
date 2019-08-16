@@ -5,9 +5,10 @@
 
 ### Notes
 2. The Authentication for Bing Search is Header based. Configure Autonomous REST Connector using the below connection properties for a successful connection.
-
-	authHeader:  Ocp-Apim-Subscription-Key 
-	SecurityToken: Your Key
+		
+		authenticationMethod: HttpHeader
+		authHeader:  Ocp-Apim-Subscription-Key 
+		SecurityToken: Your Key
 
 3. There is a `free` offering from Azure, if you are looking to just try it. Choose the appropriate pricing model based on your needs when you create the resource.
 
