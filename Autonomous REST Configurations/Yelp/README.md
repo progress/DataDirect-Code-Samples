@@ -1,21 +1,21 @@
 ## Yelp Configuration
 
-### Get your API Keys
+#### Get your API Keys
 1. Go to [Yelp Developers](https://www.yelp.com/developers/documentation/v3) page, create a new application.
 
 2. After you have created the application, you should find the API key for Yelp.
 
-### Using API Key
+#### Using API Key
 3. Yelp uses Header based Authentication. Configure Autonomous REST Connector using the below connection properties for a successful connection.
           
           authenticationMethod: HttpHeader
           authheader: Authorization
           SecurityToken: Bearer <Yelp API Key>
 
-### API Documentation
+#### API Documentation
 4. You can find the Yelp Documentation [here](https://www.yelp.com/developers/documentation/v3/get_started)
 
-### API Limitations:
+#### API Notes:
 5. Reviews are limited to just 3 records
 
 6. Pagination is only available on Business Search endpoint.
@@ -25,7 +25,7 @@
 8. Transaction Search returns only 20 records. Doesn't offer pagination.
 
 
-### Covered Endpoints
+#### Covered Endpoints
 
 Business Search    : https://www.yelp.com/developers/documentation/v3/business_search
 
