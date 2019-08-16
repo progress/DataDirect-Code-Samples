@@ -1,10 +1,15 @@
-## Bing Search Notes
+## Bing Search Configuration
 
-1. You need to get a Key from Azure to be able to use Bing Search API. It has a free tier which you can use - if you just want to try it out.
+### Get your API Key
+a. Login into your Azure Portal, search for `Bing Search` and Create a resource. Once your resource is created, you should find the API key in `Quick Start` tab under `Resource Management`.
 
-2. Authentication is Header based
+### Notes
+a. The Authentication for Bing Search is Header based. Configure Autonomous REST Connector using the below connection properties for a successful connection.
 
-	a. authHeader:  Ocp-Apim-Subscription-Key 
-	
-	b. SecurityToken: Your Key
+	authHeader:  Ocp-Apim-Subscription-Key 
+	SecurityToken: Your Key
+
+b. There is a `free` offering from Azure, if you are looking to just try it. Choose the appropriate pricing model based on your needs when you create the resource.
+
+
 	
