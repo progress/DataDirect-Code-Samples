@@ -1,9 +1,9 @@
 ## AlphaVantage Configuration Notes
 
 ### Get Your License Key
-a.  You can get Alphavantage API key from [here](https://www.alphavantage.co/support/#api-key) for free.
+1.  You can get Alphavantage API key from [here](https://www.alphavantage.co/support/#api-key) for free.
 
 ### Notes
-a. Replace apikey `demo` with your own apikey.
+2. Replace apikey `demo` with your own apikey.
 
-b. If you are using free API key - you are limited to 500 calls/day.
+3. If you are using free API key - you are limited to 500 calls/day.
