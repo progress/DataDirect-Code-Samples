@@ -1,4 +1,4 @@
-## AlphaVantage REST Configuration Notes
+## AlphaVantage Configuration Notes
 
 ### Get Your License Key
 a.  You can get Alphavantage API key from [here](https://www.alphavantage.co/support/#api-key) for free.
