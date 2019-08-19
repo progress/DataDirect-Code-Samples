@@ -1,6 +1,6 @@
 ## Getting started
 
-Progress DataDirect [Autonomous REST Connector](https://www.progress.com/connectors/autonomous-rest-connector) to deliver seamless, real-time connectivity between REST data and your ODBC/JDBC tools and applications. Autonomous REST Connector rapidly decreases the amount of time required for applications to understand and consume APIs through its codeless configuration and intelligent sampling.
+Progress DataDirect [Autonomous REST Connector](https://www.progress.com/connectors/autonomous-rest-connector) delivers seamless, real-time connectivity between REST data and your ODBC/JDBC tools and applications. Autonomous REST Connector rapidly decreases the amount of time required for applications to understand and consume APIs through its codeless configuration and intelligent sampling.
 
 This repository contains several learning materials for you to get started with Autonomous REST Connector as well as examples you can use instantly. We recommend you to start with below tutorials if you are new.
 
