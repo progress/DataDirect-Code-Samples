@@ -28,12 +28,27 @@
 11. Use CURL or Postman to send a POST request using the above URL and you should get your access token in the below format. 
 
                     {
-                        "access_token": "1000.400df74856e61c9ba9f090022998e218.8b299d0ba4033164b241da3a35e81b74",
-                        "refresh_token": "refresh_token",
+                        "access_token": "your_access_token",
+                        "refresh_token": "your_refresh_token",
                         "expires_in_sec": 3600,
                         "api_domain": "https://www.zohoapis.com",
                         "token_type": "Bearer",
                         "expires_in": 3600000
                     }
 
-12. With `Access Token` in your hand, you are now ready to make requests to access data from your ZohoCRM instance. 
+12. With `Access Token` and `Refresh Token` in your hand, you are now ready to make requests to access data from your ZohoCRM instance.
+
+#### Configure Connection
+
+1. If you are using Autonomous REST JDBC connector, you can use the below JDBC URL to connect to ZohoCRM -  
+
+          jdbc:datadirect:autorest:config="/path-to/zohocrm.rest";authenticationmethod=OAuth2;clientid=your-client-id;clientsecret=your-client-secret;refreshtoken=your-refresh-token;tokenuri=https://accounts.zoho.com/oauth/v2/token
+
+2. If you are using Autonomous REST ODBC connector, you can use the below ODBC configuration to connect to ZohoCRM.  
+
+![Configure Zoho ODBC - Part 1](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture4.PNG)  
+
+![Configure Zoho ODBC - Part 2](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture5.PNG)  
+
+
+          
