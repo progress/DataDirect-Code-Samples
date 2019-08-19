@@ -27,28 +27,37 @@
 
 11. Use CURL or Postman to send a POST request using the above URL and you should get your access token in the below format. 
 
-                    {
-                        "access_token": "your_access_token",
-                        "refresh_token": "your_refresh_token",
-                        "expires_in_sec": 3600,
-                        "api_domain": "https://www.zohoapis.com",
-                        "token_type": "Bearer",
-                        "expires_in": 3600000
-                    }
+```javascript
+{
+"access_token": "your_access_token",
+"refresh_token": "your_refresh_token",
+"expires_in_sec": 3600,
+"api_domain": "https://www.zohoapis.com",
+"token_type": "Bearer",
+"expires_in": 3600000
+}
+```
 
 12. With `Access Token` and `Refresh Token` in your hand, you are now ready to make requests to access data from your ZohoCRM instance.
 
 #### Configure Connection
 
-1. If you are using Autonomous REST JDBC connector, you can use the below JDBC URL to connect to ZohoCRM -  
+13. If you are using Autonomous REST JDBC connector, you can use the below JDBC URL to connect to ZohoCRM -  
 
-          jdbc:datadirect:autorest:config="/path-to/zohocrm.rest";authenticationmethod=OAuth2;clientid=your-client-id;clientsecret=your-client-secret;refreshtoken=your-refresh-token;tokenuri=https://accounts.zoho.com/oauth/v2/token
+```java
+jdbc:datadirect:autorest:config="/path-to/zohocrm.rest";authenticationmethod=OAuth2;clientid=your-client-id;clientsecret=your-client-secret;refreshtoken=your-refresh-token;tokenuri=https://accounts.zoho.com/oauth/v2/token
+```
 
-2. If you are using Autonomous REST ODBC connector, you can use the below ODBC configuration to connect to ZohoCRM.  
+14. If you are using Autonomous REST ODBC connector, you can use the below ODBC configuration to connect to ZohoCRM.  
 
 ![Configure Zoho ODBC - Part 1](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture4.PNG)  
 
 ![Configure Zoho ODBC - Part 2](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture5.PNG)  
 
+#### API Documentation
+15. You can find the documenation for ZohoCRM [here](https://www.zoho.com/crm/developer/docs/api/overview.html)
 
-          
+#### Notes
+16. The configurations `zohocrm.rest` and `zohocrm_beforesampling.rest` do not cover all the endpoints in the ZohoCRM API [documentation](https://www.zoho.com/crm/developer/docs/api/overview.html). It only covers a part of the ZohoCRM API as I didn't have an instance filled with data. If you need data from any other endpoint, feel free to add it to the `.rest` file.  
+
+
