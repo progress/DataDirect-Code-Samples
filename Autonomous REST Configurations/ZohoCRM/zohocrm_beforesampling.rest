@@ -1,0 +1,12 @@
+{
+"Accounts":"https://www.zohoapis.com/crm/v2/Accounts",
+"Leads":"https://www.zohoapis.com/crm/v2/Leads",
+"Contacts":"https://www.zohoapis.com/crm/v2/Contacts",
+"Deals":"https://www.zohoapis.com/crm/v2/Deals",
+"Events":"https://www.zohoapis.com/crm/v2/Events",
+"Calls":"https://www.zohoapis.com/crm/v2/Calls",
+"Products":"https://www.zohoapis.com/crm/v2/Products",
+"Vendors":"https://www.zohoapis.com/crm/v2/Vendors",
+"Notes":"https://www.zohoapis.com/crm/v2/Notes",
+"Activities":"https://www.zohoapis.com/crm/v2/Activities"
+}
