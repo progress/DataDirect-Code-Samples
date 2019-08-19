@@ -1,0 +1,16 @@
+{
+"Companies":"https://api.hubapi.com/companies/v2/companies/paged",
+"CompanyProperties":"https://api.hubapi.com/properties/v1/companies/properties",
+"Contacts":"https://api.hubapi.com/contacts/v1/lists/all/contacts/all",
+"ContactsLists":"https://api.hubapi.com/contacts/v1/lists",
+"ContactProperties":"https://api.hubapi.com/properties/v1/contacts/properties",
+"Deals":"https://api.hubapi.com/deals/v1/deal/paged",
+"DealProperties":"https://api.hubapi.com/properties/v1/deals/properties",
+"DealPipelines":"https://api.hubapi.com/deals/v1/pipelines",
+"Engagement":"https://api.hubapi.com/engagements/v1/engagements/paged",
+"Forms":"https://api.hubapi.com/forms/v2/forms",
+"Owners":"https://api.hubapi.com/owners/v2/owners",
+"Products":"https://api.hubapi.com/crm-objects/v1/objects/products/paged",
+"Tickets":"https://api.hubapi.com/crm-objects/v1/objects/tickets/paged",
+"Emails":"https://api.hubapi.com/marketing-emails/v1/emails"
+}
