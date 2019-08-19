@@ -18,3 +18,22 @@
 
           https://www.progress.com/?code=authorization_code&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com
 ![Authorization Code](https://github.com/progress/DataDirect-Code-Samples/blob/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture2.PNG?raw=true) 
+
+9. Copy the Authorization Code and send a new `POST` request to Zoho Authorization server's endpoint `https://accounts.zoho.com/oauth/v2/token` to get the access token, which is the final piece of the puzzle. 
+
+10. To get the `Access Token`, edit the below url to include your `Client ID`, `Client Secret`, `Redirect URL` from step 3 and the `Authorization Code` we got from the step 8.
+
+          https://accounts.zoho.com/oauth/v2/token?grant_type=authorization_code&client_id=your-client-id&client_secret=your-client-secret&redirect_uri=https://www.progress.com/&code=your-authorization-code&prompt=consent
+
+11. Use CURL or Postman to send a POST request using the above URL and you should get your access token in the below format. 
+
+                    {
+                        "access_token": "1000.400df74856e61c9ba9f090022998e218.8b299d0ba4033164b241da3a35e81b74",
+                        "refresh_token": "refresh_token",
+                        "expires_in_sec": 3600,
+                        "api_domain": "https://www.zohoapis.com",
+                        "token_type": "Bearer",
+                        "expires_in": 3600000
+                    }
+
+12. With `Access Token` in your hand, you are now ready to make requests to access data from your ZohoCRM instance. 
