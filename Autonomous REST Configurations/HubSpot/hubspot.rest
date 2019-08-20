@@ -5,7 +5,7 @@
 		],
 		"has-more":"Boolean",
 		"offset":"BigInt,#key",
-		"companies[]":{
+		"companies<CompaniesData>[]":{
 			"portalId":"Integer",
 			"companyId":"BigInt",
 			"isDeleted":"Boolean",
@@ -14,6 +14,404 @@
 			"stateChanges":"JSON",
 			"mergeAudits":"JSON"
 		}
+	},
+	"CompanyInfo":{
+		"#path":[
+			"https://api.hubapi.com/companies/v2/companies/{companyId}"
+		],
+		"portalId":"Integer,#key",
+		"companyId":{
+			"#type":"BigInt",
+			"#default":2338459662,
+			"#eq":"companyId"
+		},
+		"isDeleted":"Boolean",
+		"properties":{
+			"country":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoCountryVersion>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"city":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoCityVersion>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"sourceMetadata":"VarChar(64)",
+					"requestId":"GUID"
+				}
+			},
+			"timezone":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoTimeZoneVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"facebook_company_page":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompnayInfoFacebookPageVersion>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"description":{
+				"value":"VarChar(382)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompnayInfoDescriptionVersion>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(382)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"createdate":{
+				"value":"BigInt",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoCreateDateVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"BigInt",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"requestId":"GUID"
+				}
+			},
+			"web_technologies":{
+				"value":"VarChar(126)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoWebTechnologiesVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(126)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"industry":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoIndustryVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"sourceMetadata":"VarChar(64)",
+					"requestId":"GUID"
+				}
+			},
+			"numberofemployees":{
+				"value":"Integer",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoEmployeeVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"Integer",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"linkedin_company_page":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoLinkedInVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"annualrevenue":{
+				"value":"Integer",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoAnnualRevenueVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"Integer",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"founded_year":{
+				"value":"Integer",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoFoundedYearVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"Integer",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"state":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoStateVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"linkedinbio":{
+				"value":"VarChar(382)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoLinkedInBioVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(382)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"zip":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoZipVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"sourceMetadata":"VarChar(64)",
+					"requestId":"GUID"
+				}
+			},
+			"website":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoWebsiteVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"requestId":"GUID"
+				}
+			},
+			"address":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoAddressVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"sourceMetadata":"VarChar(64)",
+					"requestId":"GUID"
+				}
+			},
+			"address2":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoAddress2Versions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"twitterhandle":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoTwitterVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"hs_lastmodifieddate":{
+				"value":"BigInt",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoModifiedDateVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"BigInt",
+					"timestamp":"BigInt",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"phone":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompnayInfoPhoneVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"sourceMetadata":"VarChar(64)",
+					"requestId":"GUID"
+				}
+			},
+			"domain":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoDomainVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"sourceMetadata":"VarChar(64)",
+					"requestId":"GUID"
+				}
+			},
+			"name":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoNameVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"sourceMetadata":"VarChar(64)",
+					"requestId":"GUID"
+				}
+			},
+			"is_public":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"VarChar(64)",
+				"versions<CompanyInfoIsPublicVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"VarChar(64)",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON"
+				}
+			},
+			"hs_object_id":{
+				"value":"BigInt",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoObjectIdVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"BigInt",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"requestId":"GUID"
+				}
+			},
+			"lifecyclestage":{
+				"value":"VarChar(64)",
+				"timestamp":"BigInt",
+				"source":"VarChar(64)",
+				"sourceId":"Integer",
+				"versions<CompanyInfoLifeCycleStagesVersions>[]":{
+					"name":"VarChar(64)",
+					"value":"VarChar(64)",
+					"timestamp":"BigInt",
+					"sourceId":"Integer",
+					"source":"VarChar(64)",
+					"sourceVid":"JSON",
+					"sourceMetadata":"VarChar(64)",
+					"requestId":"GUID"
+				}
+			}
+		},
+		"additionalDomains":"JSON",
+		"stateChanges":"JSON",
+		"mergeAudits":"JSON"
 	},
 	"CompanyProperties":{
 		"#path":[
@@ -53,7 +451,7 @@
 		"isCustomizedDefault":"Boolean",
 		"searchTextAnalysisMode":"VarChar(64)",
 		"updatedUserId":"VarChar(64)",
-		"options[]":{
+		"options<CompanyPropertiesOptions>[]":{
 			"label":"LongVarChar(4000)",
 			"displayOrder":"Integer",
 			"hidden":"Boolean",
@@ -67,7 +465,7 @@
 		"#path":[
 			"https://api.hubapi.com/contacts/v1/lists/all/contacts/all"
 		],
-		"contacts[]":{
+		"contacts<ContactsData>[]":{
 			"addedAt":"BigInt",
 			"vid":"Integer",
 			"canonical-vid":"Integer",
@@ -91,11 +489,11 @@
 				}
 			},
 			"form-submissions":"JSON",
-			"identity-profiles[1]":{
+			"identity-profiles<ContactsIdentityProfiles>[1]":{
 				"vid":"Integer",
 				"saved-at-timestamp":"BigInt",
 				"deleted-changed-timestamp":"Integer",
-				"identities[2]":{
+				"identities<ContactIdentities>[2]":{
 					"type":"VarChar(13)",
 					"value":"VarChar(64)",
 					"timestamp":"BigInt",
@@ -111,7 +509,7 @@
 		"#path":[
 			"https://api.hubapi.com/contacts/v1/lists"
 		],
-		"lists[]":{
+		"lists<ContactsListsData>[]":{
 			"teamIds":"JSON",
 			"portalId":"Integer",
 			"createdAt":"BigInt",
@@ -175,7 +573,7 @@
 		"isCustomizedDefault":"Boolean",
 		"searchTextAnalysisMode":"VarChar(64)",
 		"updatedUserId":"VarChar(64)",
-		"options[]":{
+		"options<ContactPropertyOptions>[]":{
 			"label":"VarChar(61)",
 			"displayOrder":"Integer",
 			"hidden":"Boolean",
@@ -189,7 +587,7 @@
 		"#path":[
 			"https://api.hubapi.com/deals/v1/deal/paged"
 		],
-		"deals[]":{
+		"deals<DealsData>[]":{
 			"portalId":"Integer",
 			"dealId":"Integer",
 			"isDeleted":"Boolean",
@@ -200,7 +598,7 @@
 					"timestamp":"Integer",
 					"source":"VarChar(15)",
 					"sourceId":"VarChar(64)",
-					"versions[1]":{
+					"versions<DealsDataVersions>[1]":{
 						"name":"VarChar(18)",
 						"value":"Integer",
 						"source":"VarChar(15)",
@@ -252,7 +650,7 @@
 		"numberDisplayHint":"VarChar(64)",
 		"isCustomizedDefault":"Boolean",
 		"updatedUserId":"VarChar(64)",
-		"options[]":{
+		"options<DealPropertiesOptions>[]":{
 			"readOnly":"VarChar(64)",
 			"label":"VarChar(64)",
 			"displayOrder":"Integer",
@@ -267,7 +665,7 @@
 			"https://api.hubapi.com/deals/v1/pipelines"
 		],
 		"pipelineId":"VarChar(64),#key",
-		"stages[]":{
+		"stages<DealPipelinesStages>[]":{
 			"stageId":"VarChar(64)",
 			"label":"VarChar(64)",
 			"probability":"Double",
@@ -284,7 +682,7 @@
 		"#path":[
 			"https://api.hubapi.com/engagements/v1/engagements/paged"
 		],
-		"results[]":{
+		"results<EngagementData>[]":{
 			"engagement":{
 				"id":"BigInt",
 				"portalId":"Integer",
@@ -314,7 +712,7 @@
 				"quoteIds":"JSON"
 			},
 			"attachments":"JSON",
-			"scheduledTasks[]":{
+			"scheduledTasks<EngagementScheduledTasks>[]":{
 				"engagementId":"BigInt",
 				"portalId":"Integer",
 				"engagementType":"VarChar(64)",
@@ -351,7 +749,7 @@
 		"notifyRecipients":"VarChar(64)",
 		"leadNurturingCampaignId":"VarChar(64)",
 		"formFieldGroups[]":{
-			"fields[]":{
+			"fields<FormFields>[]":{
 				"name":"VarChar(75)",
 				"label":"VarChar(64)",
 				"type":"VarChar(64)",
@@ -361,7 +759,7 @@
 				"displayOrder":"Integer",
 				"required":"Boolean",
 				"selectedOptions[]":"VarChar(64)",
-				"options[]":{
+				"options<FormOptions>[]":{
 					"label":"VarChar(64)",
 					"value":"VarChar(64)",
 					"displayOrder":"Integer",
@@ -439,7 +837,7 @@
 		"email":"VarChar(76)",
 		"createdAt":"BigInt",
 		"updatedAt":"BigInt",
-		"remoteList[1]":{
+		"remoteList<OwnersRemoteList>[1]":{
 			"id":"Integer",
 			"portalId":"Integer",
 			"ownerId":"Integer",
@@ -465,7 +863,7 @@
 		"#path":[
 			"https://api.hubapi.com/crm-objects/v1/objects/tickets/paged"
 		],
-		"objects[]":{
+		"objects<TicketsData>[]":{
 			"objectType":"VarChar(64)",
 			"portalId":"Integer",
 			"objectId":"Integer",
@@ -480,7 +878,7 @@
 			"https://api.hubapi.com/marketing-emails/v1/emails"
 		],
 		"limit":"Integer,#key",
-		"objects[]":{
+		"objects<EmailsData>[]":{
 			"ab":"Boolean",
 			"abHoursToWait":"Integer",
 			"abSampleSizeDefault":"VarChar(64)",
@@ -519,8 +917,8 @@
 					"boxLastElementIndex":"Integer",
 					"boxed":"Boolean",
 					"isSingleColumnFullWidth":"Boolean",
-					"sections[]":{
-						"columns[]":{
+					"sections<EmailSections>[]":{
+						"columns<EmailColumns>[]":{
 							"id":"VarChar(64)",
 							"widgets[]":"VarChar(64)",
 							"width":"Integer"
