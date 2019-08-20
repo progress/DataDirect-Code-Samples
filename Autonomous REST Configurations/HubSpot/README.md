@@ -54,7 +54,7 @@ jdbc:datadirect:autorest:config="/path-to/hubspot.rest";authenticationmethod=OAu
 15. You can find the documenation for HubSpot [here](https://developers.hubspot.com/docs/overview)
 
 #### Notes
-16. The configurations `hubspot.rest` and `hubspot_beforesampling.rest` do not cover all the endpoints in the ZohoCRM API [documentation](https://developers.hubspot.com/docs/overview). It only covers a part of the Hubspot API as I didn't have an instance filled with data. If you need data from any other endpoint, feel free to add it to the `.rest` file.  
+16. The configurations `hubspot.rest` and `hubspot_beforesampling.rest` do not cover all the endpoints in the HubSpot API [documentation](https://developers.hubspot.com/docs/overview). It only covers a part of the Hubspot API as I didn't have an instance filled with data. If you need data from any other endpoint, feel free to add it to the `.rest` file.  
 
 
 
