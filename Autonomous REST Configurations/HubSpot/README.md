@@ -5,7 +5,7 @@
 1. If you don't have a HubSpot Developer account, sign up for a [trial](https://app.hubspot.com/login/?loginRedirectUrl=https%3A%2F%2Fapp.hubspot.com%2Fdeveloper%2F).    
 2. Go to HubSpot Developer Console and create new App, by clicking on `Create App` button.  
 3. Configure your new app as shown below. You can choose your own `OAuth Redirect URL` or just use the below configuration.  
-![configure new client](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture.PNG)  
+![configure new client](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/HubSpot/img/Capture.PNG)  
 4. Once you have created the new app, you should be able to see ClientID and ClientSecret for your account. Save them.  
 5. HubSpot uses OAuth2.0 authentication, so to get access token you need to get the Authorization code first. To get the Authorization code, you need to make a request to Authorization Server by sending your `ClientId`, `Authorization Scopes` (i.e, to indicate the data you want to access) and `OAuth Redirect URL` which you specified when you created the client in step 3.  
 6. To get the authorization code, modify the below URL with your `Client ID` and `OAuth Redirect URL` if you have used something else.
@@ -16,7 +16,7 @@
 8. After you click on `Accept` you should be redirected to www.progress.com or the redirect URL you specified. The URL should be in the below format and you will find your Authorization Code in the code parameter in the URL as shown below.  
 
           https://www.progress.com/?code=your-Authorization-Code
-![Authorization Code](https://github.com/progress/DataDirect-Code-Samples/blob/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture2.PNG?raw=true) 
+![Authorization Code](https://github.com/progress/DataDirect-Code-Samples/blob/master/Autonomous%20REST%20Configurations/HubSpot/img/Capture2.PNG?raw=true) 
 
 9. Copy the Authorization Code and send a new `POST` request to HubSpot Authorization server's endpoint `https://api.hubapi.com/oauth/v1/token` to get the access token, which is the final piece of the puzzle. 
 
@@ -46,9 +46,9 @@ jdbc:datadirect:autorest:config="/path-to/hubspot.rest";authenticationmethod=OAu
 
 14. If you are using Autonomous REST ODBC connector, you can use the below ODBC configuration to connect to HubSpot.  
 
-![Configure Zoho ODBC - Part 1](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture4.PNG)  
+![Configure Zoho ODBC - Part 1](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/HubSpot/img/Capture4.PNG)  
 
-![Configure Zoho ODBC - Part 2](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/ZohoCRM/img/Capture5.PNG)  
+![Configure Zoho ODBC - Part 2](https://raw.githubusercontent.com/progress/DataDirect-Code-Samples/master/Autonomous%20REST%20Configurations/HubSpot/img/Capture3.PNG)  
 
 #### API Documentation
 15. You can find the documenation for HubSpot [here](https://developers.hubspot.com/docs/overview)
