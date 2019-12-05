@@ -15,7 +15,7 @@ glueContext = GlueContext(sc)
 spark = glueContext.spark_session
 job = Job(glueContext)
  
-##Read Data from Salesforce using DataDirect JDBC driver in to DataFrame
+##Read Data from REST API using DataDirect Autonomous REST Connector JDBC driver in to DataFrame
 source_df = spark.read.format("jdbc").option("url","jdbc:datadirect:autorest:config=yelp.rest;AuthenticationMethod=HttpHeader;AuthHeader=Authorization;SecurityToken='Bearer JcMUtuWfaqJdWJBqqLrgBxfbYh6GIUGv3zUyXOG4zsfe6wnOtlZBeroFb8rpRM-dESFzcSAUd1YDAtQm2yl0hrJwfldvHp2AdEzRXThZku69r-w4wTv80Cj7d08ZXHYx'").option("dbtable", "AUTOREST.BUSINESSES").option("driver", "com.ddtek.jdbc.autorest.AutoRESTDriver").load()
  
 job.init(args['JOB_NAME'], args)
